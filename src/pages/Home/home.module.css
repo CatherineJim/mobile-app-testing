@@ -1,0 +1,19 @@
+.search-button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+/* If you're using Font Awesome for the search icon, you can include it here */

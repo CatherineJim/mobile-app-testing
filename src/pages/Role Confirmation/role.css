@@ -1,0 +1,94 @@
+.role-info {
+  background-color: #272626;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.role-info .role-content {
+  background-color: #272626;
+  border: 1px none;
+  height: 882px;
+  position: relative;
+  width: 1178px;
+}
+
+.role-info h1 {
+  color: #f388bb;
+  font-family: "Outfit", Helvetica;
+  font-size: 75px;
+  font-weight: 700;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: 119px;
+  position: absolute;
+  text-align: center;
+  top: 138px;
+  width: 774px;
+}
+
+.role-info .text-wrapper {
+  color: #f388bb;
+  font-family: "Outfit", Helvetica;
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 119px;
+}
+
+.role-info .tester {
+  -webkit-text-stroke: 1px #000000;
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 55px;
+  font-weight: 500;
+  left: 201px;
+  letter-spacing: 0;
+  line-height: 119px;
+  position: absolute;
+  text-align: center;
+  top: 423px;
+  white-space: nowrap;
+}
+
+.role-info .span {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 55px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 119px;
+}
+
+.role-info .developer {
+  -webkit-text-stroke: 1px #000000;
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 55px;
+  font-weight: 500;
+  left: 769px;
+  letter-spacing: 0;
+  line-height: 119px;
+  position: absolute;
+  text-align: center;
+  top: 423px;
+  white-space: nowrap;
+}
+
+.role-content .checkboxes-icon {
+  height: 145px;
+  left: 202px;
+  position: absolute;
+  top: 540px;
+  width: 145px;
+}
+
+.role-content .checkbox-img .img {
+  height: 145px;
+  left: 829px;
+  position: absolute;
+  top: 540px;
+  width: 145px;
+}

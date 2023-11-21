@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My first post",
+      "datetime": "July 01, 2023 11:17:36 AM",
+      "body": "Lorem ipsum dolor sit amet consectetur"
+    },
+    {
+      "id": 2,
+      "title": "My second post",
+      "datetime": "July 01, 2023 11:17:36 AM",
+      "body": "Lorem ipsum dolor sit amet consectetur"
+    },
+    {
+      "id": 2,
+      "title": "My first post",
+      "datetime": "July 01, 2023 11:17:36 AM",
+      "body": "Lorem ipsum dolor sit amet consectetur"
+    },
+    {
+      "id": 2,
+      "title": "My first post",
+      "datetime": "July 01, 2023 11:17:36 AM",
+      "body": "Lorem ipsum dolor sit amet consectetur"
+    }
+  ]
+}

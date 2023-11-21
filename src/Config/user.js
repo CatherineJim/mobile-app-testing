@@ -1,0 +1,3 @@
+// db.createuser({
+//   user: "Ajay",
+// });

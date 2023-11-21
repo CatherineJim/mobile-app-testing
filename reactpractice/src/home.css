@@ -1,0 +1,12 @@
+.homepage {
+  background-color: #bd1d1d;
+  color: #fff;
+  height: 90vh;
+  overflow: hidden;
+}
+.homepage .content .info h1 {
+  margin-left: 40px;
+}
+.homepage .content .info p {
+  margin-left: 40px;
+}

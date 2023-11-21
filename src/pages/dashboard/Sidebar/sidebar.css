@@ -1,0 +1,58 @@
+/* Update your CSS */
+
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 16px; /* Decreased font size to accommodate icons */
+  color: #fdfdfd;
+  display: flex; /* To align icon and text */
+  align-items: center; /* To vertically center the icon and text */
+  padding: 8px;
+  margin-top: 30px;
+  font-family: "Poppins", Helvetica;
+  transition: 0.3s; /* Smooth transition for the hover effect */
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav :link {
+  margin-left: 30px;
+}
+
+/* Create a class for the icon */
+.sidenav a .fa {
+  margin-right: 10px; /* Adjust spacing between icon and text */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Add this class to change the color of the icon */
+.sidenav a.active .fa {
+  color: #00f; /* Change the color to your desired color */
+}
