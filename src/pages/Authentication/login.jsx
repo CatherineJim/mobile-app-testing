@@ -3,6 +3,19 @@ import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import {
+  auth,
+  facebookProvider,
+  googleProvider,
+  twitterProvider,
+} from "../../firebase-config";
+import {
+  RecaptchaVerifier,
+  signInWithPhoneNumber,
+  signInWithPopup,
+} from "firebase/auth";
 
 export const LoginForm = () => {
   const [form, setForm] = useState({
@@ -44,6 +57,27 @@ export const LoginForm = () => {
       console.log("====================================");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleSignUpWithGoogle = async () => {
+    try {
+      const response = await signInWithPopup(auth, googleProvider);
+
+      if (response) {
+        console.log(response);
+
+        // setUser(response.user.providerData);
+
+        localStorage.setItem(
+          "user",
+          JSON.stringify(response.user.providerData)
+        );
+
+        // router.push("/chat");
+      }
+    } catch (error) {
+      console.log(error);
     }
   };
 
@@ -91,16 +125,39 @@ export const LoginForm = () => {
             <label for="remember">Remember me?</label> */}
           </div>
 
-          <div class="row">
-            <a href="#" target="_blank">
-              Forgot password?
-            </a>
-            <p>
-              Don't have an account?
-              <Link to="/signup" target="_blank">
-                Sign in
-              </Link>
-            </p>
+          <div className="row">
+            <div className="col">
+              <a href="#" target="_blank">
+                Forgot password?
+              </a>
+              <p>
+                Don't have an account?
+                <Link to="/signup" target="_blank">
+                  Sign in
+                </Link>
+              </p>
+            </div>
+            <div className="col flex gap-4">
+              <p className="text-center">Sign in with</p>
+              <div className="d-flex justify-content-center ">
+                <FaFacebook
+                  role="button"
+                  onClick={() => {
+                    alert("clicked");
+                  }}
+                  className="fs-2 me-3 text-primary"
+                />
+                <FaTwitter
+                  role="button"
+                  className="fs-2 me-3 text-primary opacity-50"
+                />
+                <FcGoogle
+                  role="button"
+                  onClick={handleSignUpWithGoogle}
+                  className="fs-2"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
